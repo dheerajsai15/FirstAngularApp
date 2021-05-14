@@ -1,8 +1,8 @@
 <div class="card h-100 shadow">
-    <img src="https://wallpaperaccess.com/full/4755970.jpg" class="card-img-top w-100" alt="...">
+    <img src="{{productObject.Image}}" class="card-img-top" height="200px" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title text-center">{{productObject.Title}}</h5>
+      <p class="card-text">{{productObject.Desc}}</p>
+      <a href="#" class="btn btn-primary" style="position: relative;bottom:0px">Add to Cart</a>
     </div>
   </div>
