@@ -1,0 +1,16 @@
+<table class="table text-dark text-center">
+    <thead>
+        <tr>
+            <td>Id</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let postObj of Posts">
+            <td>
+                <button class="btn btn-success" (click)= "navgateTo(postObj.id)">
+                    {{postObj.id}}
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

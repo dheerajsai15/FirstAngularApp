@@ -14,6 +14,6 @@ export class DataService {
 
   getMobilesData():Observable<Product[]>{
     //http get
-    return this.hc.get<Product[]>("assets/mobiles.json")
+    return this.hc.get<Product[]>("http://localhost:3000/mobiles")
   }
 }

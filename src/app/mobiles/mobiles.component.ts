@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import {DataService} from '../data.service'
 import { Product } from '../Models/user.model';
 
@@ -7,8 +8,8 @@ import { Product } from '../Models/user.model';
   templateUrl: './mobiles.component.html',
   styleUrls: ['./mobiles.component.css']
 })
-export class MobilesComponent implements OnInit{
-
+export class MobilesComponent implements OnInit,OnDestroy{
+  mySubscription:Subscription
   mobiles:Product[]=[];
    
    //Inject object of data service class
@@ -17,7 +18,7 @@ export class MobilesComponent implements OnInit{
 
    ngOnInit(){
      
-    this.dsObj.getMobilesData().subscribe(
+    this.mySubscription = this.dsObj.getMobilesData().subscribe(
       data=>{
         this.mobiles=data;
       },
@@ -26,6 +27,10 @@ export class MobilesComponent implements OnInit{
       }
     )
 
+   }
+
+   ngOnDestroy(){
+     this.mySubscription.unsubscribe();
    }
 
 }

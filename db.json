@@ -1,0 +1,16 @@
+{
+    "mobiles" : [
+        {
+           "id" : 1, 
+          "Title":"Iphone 12",
+          "Desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maxime illo nihil beatae ipsam voluptatibus odio minima aliquam aliquid aut,",
+          "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9UtVZs4g6x86eHR3olr_5TXFuAa4Q1pPzg&usqp=CAU"
+        },
+        {
+            "id" : 2,
+          "Title":"Iphone 11",
+          "Desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maxime illo nihil beatae ipsam voluptatibus odio minima aliquam aliquid aut,",
+          "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBd8BzxFG5P59lAMZ0WtB0K5-AgVEdG-RDA&usqp=CAU"
+        }
+      ]
+}
